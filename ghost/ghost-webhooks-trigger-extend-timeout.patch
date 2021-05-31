@@ -1,6 +1,6 @@
 Patch to increase Ghost trigger timeout to resolve issue where slow downline services cause webhook to fail.
 Tested with https://github.com/TryGhost/Ghost version:4.6.4
-To apply use https://raw.githubusercontent.com/influencerTips/various-patches/main/ghost/ghost-webhooks-trigger-extend-timeout.patch
+To apply use `curl https://raw.githubusercontent.com/influencerTips/various-patches/main/ghost/ghost-webhooks-trigger-extend-timeout.patch | git apply`
 
 diff --git a/core/server/services/webhooks/trigger.js b/core/server/services/webhooks/trigger.js
 index 0796aa789..3a9bceece 100644
