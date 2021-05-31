@@ -1,0 +1,13 @@
+diff --git a/core/server/services/webhooks/trigger.js b/core/server/services/webhooks/trigger.js
+index 0796aa789..3a9bceece 100644
+--- a/core/server/services/webhooks/trigger.js
++++ b/core/server/services/webhooks/trigger.js
+@@ -78,7 +78,7 @@ module.exports = (event, model) => {
+                                 'Content-Length': Buffer.byteLength(reqPayload),
+                                 'Content-Type': 'application/json'
+                             },
+-                            timeout: 2 * 1000,
++                            timeout: 10 * 1000,
+                             retry: 5
+                         };
+ 
